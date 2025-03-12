@@ -8,14 +8,16 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background-color: #455CE9;
+        background-color: #091B63;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 11;
     }
 
     .burger{
+        z-index: 11;
         width: 100%;
         &::after, &::before{
             content: "";
@@ -38,7 +40,7 @@
     }
 
     .burgerActive{
-
+        z-index: 11;
         &::after{
             transform: rotate(45deg);
             top: -1px;
