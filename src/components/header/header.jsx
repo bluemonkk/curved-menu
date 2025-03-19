@@ -1,11 +1,11 @@
 'use client'
 import styles from './style.module.scss'
 import { useEffect, useState } from 'react';
-import Nav from './nav';
+import Navmain from './nav/navMain';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
-export default function Home() {
+export default function Header() {
 
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
@@ -26,7 +26,7 @@ export default function Home() {
 
     </div>
     <AnimatePresence mode="wait">
-      {isActive && <Nav />}
+      {isActive && <Navmain />}
     </AnimatePresence>
     </>
   )

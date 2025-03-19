@@ -1,6 +1,6 @@
 import './globals.scss'
 import { Inter } from 'next/font/google'
-import Header from '../components/header';
+import Header from '../components/header/header';
 // import Cursor from '../components/cursor/cursor';
 const inter = Inter({ subsets: ['latin'] })
 import MouseFollower from "mouse-follower";

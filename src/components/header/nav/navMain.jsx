@@ -3,9 +3,9 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../anim';
-import Link from './Link';
-import Curve from './Curve';
-import Footer from './Footer';
+import Link from './Link/link';
+import Curve from './Curve/curve';
+import Footer from './Footer/footer';
 
 const navItems = [
   {
@@ -26,7 +26,7 @@ const navItems = [
   },
 ]
 
-export default function index() {
+export default function Navmain() {
 
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
